@@ -2,10 +2,7 @@ const mongoose = require("mongoose")
 main().catch(err => console.log(err))
 
 async function main(){
-    await mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      })
+    await mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority')
 }
 
 const my_Schema = mongoose.Schema({
