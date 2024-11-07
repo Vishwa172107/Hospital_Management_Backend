@@ -76,11 +76,11 @@
             Booking an appointment is easy and convenient—simply click the button below to get started.
         </p>
         <h2>Upcoming Appointments</h2>
-        <div class="appointments">
+        <div class="row appointments">
             <%let count=0;for(appointment of appointment_array){%>
                 <%if (count===4){break}%>
                 <%count+=1%>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <p class="card-text">Patient Name: <%= appointment.patientName %></p>
