@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 main().catch(err => console.log(err))
 
 async function main(){
-    await mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority')
+    await mongoose.connect("mongodb+srv://vishwabadrinadhpadala:Padalasree1703@cluster1.k3ioe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 }
 
 const my_Schema = mongoose.Schema({
