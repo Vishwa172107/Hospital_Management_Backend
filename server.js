@@ -34,7 +34,8 @@ server.get("/appointment/:doctor_id", async(req, res)=>{
         res.status(404).send("Doctor Not Found!")
     }
     let doctors = await(my_model.find())
-    res.render("Appointment.ejs", {doctors, selected_doctor})
+    let appointment_array = await(appointments.find())
+    res.render("Appointment.ejs", {doctors, selected_doctor, appointment_array})
 })
 server.get("/contact", (req, res)=>{
     const messageSent = req.query.messageSent === 'true';
