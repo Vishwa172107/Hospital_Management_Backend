@@ -14,27 +14,27 @@ const my_Schema = mongoose.Schema({
 
 const my_model = mongoose.model("doctors_collection", my_Schema)
 
-// my_model.insertMany([{
-//     src:"./assets/d1.jpg",
-//     name: "John Doe",
-//     speciality: "Cardiologist",
-//     stars: 4.8
-// },{
-//     src:"./assets/d2.jpg",
-//     name: "Jane Smith",
-//     speciality: "Dermatologist",
-//     stars: 4.6
-// },{
-//     src:"./assets/d3.jpg",
-//     name: "Sarah Lee",
-//     speciality: "Pediatrician",
-//     stars: 4.7
-// },{
-//     src:"./assets/d4.jpg",
-//     name: "Mike Johnson",
-//     speciality:"Neurologist",
-//     stars:4.9
-// }])
+my_model.insertMany([{
+    src:"./assets/d1.jpg",
+    name: "John Doe",
+    speciality: "Cardiologist",
+    stars: 4.8
+},{
+    src:"./assets/d2.jpg",
+    name: "Jane Smith",
+    speciality: "Dermatologist",
+    stars: 4.6
+},{
+    src:"./assets/d3.jpg",
+    name: "Sarah Lee",
+    speciality: "Pediatrician",
+    stars: 4.7
+},{
+    src:"./assets/d4.jpg",
+    name: "Mike Johnson",
+    speciality:"Neurologist",
+    stars:4.9
+}])
 
 const appointment_schema = mongoose.Schema({
     patientName:String,
